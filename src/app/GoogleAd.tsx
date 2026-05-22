@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const CONSENT_KEY = "img2gradient_cookie_consent";
 const PUBLISHER_ID = "ca-pub-8366908512129463";
-const AD_SLOT = "xxxxxxxxxx";
+const AD_SLOT = "3969509099";
 
 export default function GoogleAd() {
   const [consent, setConsent] = useState<boolean | null>(null);
