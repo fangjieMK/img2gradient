@@ -177,8 +177,14 @@ export default function PrivacyPage() {
       <section className="space-y-3">
         <h2 className="text-lg font-semibold text-white">9. Contact</h2>
         <p>
-          If you have questions about this Privacy Policy, please contact us
-          through our website.
+          If you have questions about this Privacy Policy, please contact us at{" "}
+          <a
+            href="mailto:fangjiezw@163.com"
+            className="text-indigo-400 hover:underline"
+          >
+            fangjiezw@163.com
+          </a>
+          .
         </p>
       </section>
 

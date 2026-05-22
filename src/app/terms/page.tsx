@@ -123,8 +123,14 @@ export default function TermsPage() {
       <section className="space-y-3">
         <h2 className="text-lg font-semibold text-white">10. Contact</h2>
         <p>
-          For questions about these Terms, please contact us through our
-          website.
+          For questions about these Terms, please contact us at{" "}
+          <a
+            href="mailto:fangjiezw@163.com"
+            className="text-indigo-400 hover:underline"
+          >
+            fangjiezw@163.com
+          </a>
+          .
         </p>
       </section>
 

@@ -622,6 +622,80 @@ export default function Page() {
       </section>
 
       {/* ===================================================
+           HOW IT WORKS (landing page content)
+      =================================================== */}
+      {phase !== "ready" && (
+        <section className="max-w-4xl mx-auto px-4 pb-16 grid gap-8 md:grid-cols-3">
+          <div className="bg-white/[0.03] border border-gray-700/60 rounded-2xl p-6 text-center">
+            <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-500/20 flex items-center justify-center">
+              <svg
+                className="w-5 h-5 text-indigo-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+            </div>
+            <h3 className="text-sm font-semibold text-gray-200 mb-2">
+              1. Upload Image
+            </h3>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Drag & drop any JPEG, PNG, WebP, GIF, or BMP image. Your file
+              stays on your device — nothing is uploaded to any server.
+            </p>
+          </div>
+
+          <div className="bg-white/[0.03] border border-gray-700/60 rounded-2xl p-6 text-center">
+            <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-purple-500/20 flex items-center justify-center">
+              <svg
+                className="w-5 h-5 text-purple-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+              </svg>
+            </div>
+            <h3 className="text-sm font-semibold text-gray-200 mb-2">
+              2. Extract Colors
+            </h3>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Our K-Means++ algorithm analyzes your image and extracts up to 6
+              dominant colors — processed entirely in your browser.
+            </p>
+          </div>
+
+          <div className="bg-white/[0.03] border border-gray-700/60 rounded-2xl p-6 text-center">
+            <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-cyan-500/20 flex items-center justify-center">
+              <svg
+                className="w-5 h-5 text-cyan-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3 className="text-sm font-semibold text-gray-200 mb-2">
+              3. Export CSS
+            </h3>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Copy the CSS snippet or export as a PNG/CSS file. Paste directly
+              into your project — no dependencies, no framework lock-in.
+            </p>
+          </div>
+        </section>
+      )}
+
+      {/* ===================================================
            EDITOR (shown after extraction)
       =================================================== */}
       {phase === "ready" && (

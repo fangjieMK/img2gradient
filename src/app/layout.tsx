@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import CookieBanner from "./CookieBanner";
+import NavBar from "./NavBar";
 
 export const metadata: Metadata = {
   title: "img2gradient - Image to CSS Gradient Generator",
@@ -33,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="bg-[#0b0f19] text-gray-100 min-h-screen flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
+        <NavBar />
         <main className="flex-grow flex flex-col">
           {children}
         </main>
@@ -50,6 +52,9 @@ export default function RootLayout({
               </a>
               <a href="/terms" className="hover:underline">
                 Terms of Service
+              </a>
+              <a href="/contact" className="hover:underline">
+                Contact
               </a>
               <a
                 href="https://www.google.com/adsense"
