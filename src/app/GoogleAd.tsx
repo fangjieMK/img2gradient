@@ -6,7 +6,7 @@ const CONSENT_KEY = "img2gradient_cookie_consent";
 
 // Replace with your real Google AdSense publisher ID after approval.
 // Format: ca-pub-XXXXXXXXXXXXXXXX
-const PUBLISHER_ID = "ca-pub-xxxxxxxxxxxxxxxx";
+const PUBLISHER_ID = "ca-pub-8366908512129463";
 
 // Replace with your real ad unit slot ID.
 const AD_SLOT = "xxxxxxxxxx";
