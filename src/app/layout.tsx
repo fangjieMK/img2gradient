@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import CookieBanner from "./CookieBanner";
 import NavBar from "./NavBar";
@@ -74,11 +73,11 @@ export default function RootLayout({
 
         <CookieBanner />
 
-        <Script
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8366908512129463"
-          strategy="beforeInteractive"
           crossOrigin="anonymous"
-        />
+        ></script>
       </body>
     </html>
   );
